@@ -1,5 +1,11 @@
 server:
   port: 8081
+  ssl:
+    key-store: classpath:server.jks
+    key-store-password: 123456
+    key-store-type: jks
+    enabled: true
+    client-auth: want
 
 spring:
   thymeleaf:
